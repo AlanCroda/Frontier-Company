@@ -1,6 +1,6 @@
 # Frontier Company
 
-Frontier Company is a compact, pausable, systems-driven strategy game being developed in Unity by a solo developer. The player builds and controls a small organization operating inside a changing regional ecosystem.
+Frontier Company is a compact, systems-driven strategy game being developed in Unity by a solo developer. Its approved time model is Real-Time with Pause (RTWP), operating on a simultaneous tick-based system. The player builds and controls a small organization operating inside a changing regional ecosystem.
 
 This repository is in its initial production-foundation stage. The current priority is establishing lightweight project context for design work and future Codex implementation work without committing to detailed gameplay systems too early.
 

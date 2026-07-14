@@ -11,6 +11,14 @@ This file records durable project decisions. It should stay lightweight and shou
 - **Consequences:** Repository guidance should preserve standard Unity project structure and avoid unnecessary non-Unity assumptions.
 - **Related docs:** `README.md`, `docs/current-state.md`
 
+
+### 2026-07-14 — Real-Time with Pause time model
+
+- **Decision:** Frontier Company should use Real-Time with Pause (RTWP), operating on a simultaneous tick-based system.
+- **Rationale:** The game needs a time model that supports systemic interaction while allowing the player to pause, inspect, and make contextual strategic decisions.
+- **Consequences:** Documentation should describe pause as part of the RTWP time model rather than as a loose central identity label. Future gameplay implementation should account for simultaneous tick resolution, but detailed timing, tick length, scheduling, and simulation architecture remain undecided.
+- **Related docs:** `docs/vision.md`, `docs/current-state.md`, `AGENTS.md`
+
 ### 2026-07-14 — Solo-developer scope
 
 - **Decision:** The project foundation should stay suitable for a solo developer.

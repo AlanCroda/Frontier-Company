@@ -22,7 +22,8 @@ Confirmed project files include:
 
 - Frontier Company is a Unity strategy game project.
 - Development is solo-developer oriented.
-- The intended game is compact, pausable, and systems-driven.
+- The intended game is compact and systems-driven.
+- The approved time model is Real-Time with Pause (RTWP), operating on a simultaneous tick-based system.
 - The foundation docs should serve as source-of-truth constraints for Codex and future implementation work.
 - Detailed gameplay systems are not yet decided.
 

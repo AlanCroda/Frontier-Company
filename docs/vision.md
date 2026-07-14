@@ -2,7 +2,7 @@
 
 ## Project identity
 
-Frontier Company is a compact, pausable, systems-driven strategy game built in Unity by a solo developer.
+Frontier Company is a compact, systems-driven strategy game built in Unity by a solo developer. Its approved time model is Real-Time with Pause (RTWP), operating on a simultaneous tick-based system.
 
 The player builds and controls a small organization operating inside a changing regional ecosystem. The game should create strategic pressure through systemic interaction, contextual risk, and the consequences of player commitments rather than through a large content volume.
 
@@ -45,6 +45,7 @@ The following areas are intentionally not specified yet:
 - resources, markets, or production chains;
 - map structure;
 - campaign structure;
+- tick length, timing values, and simulation scheduling details;
 - user interface layout;
 - balance values;
 - testing framework.
