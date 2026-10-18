@@ -16,7 +16,7 @@ This file records durable project decisions. It should stay lightweight and shou
 
 - **Decision:** Frontier Company should use Real-Time with Pause (RTWP), operating on a simultaneous tick-based system.
 - **Rationale:** The game needs a time model that supports systemic interaction while allowing the player to pause, inspect, and make contextual strategic decisions.
-- **Consequences:** Documentation should describe pause as part of the RTWP time model rather than as a loose central identity label. Future gameplay implementation should account for simultaneous tick resolution, but detailed timing, tick length, scheduling, and simulation architecture remain undecided.
+- **Consequences:** Documentation should describe pause as part of the RTWP time model rather than as a loose central identity label. Future representative gameplay implementation should account for simultaneous tick resolution, but detailed timing, tick length, scheduling, and simulation architecture remain undecided. The earliest interaction prototype does not need to implement this time model.
 - **Related docs:** `docs/vision.md`, `docs/current-state.md`, `AGENTS.md`
 
 ### 2026-07-14 — Solo-developer scope
@@ -54,13 +54,20 @@ This file records durable project decisions. It should stay lightweight and shou
 - **Consequences:** Do not introduce a testing framework or mandate a test workflow yet.
 - **Related docs:** `AGENTS.md`, `docs/current-state.md`
 
+### 2026-10-18 — Validate a basic interaction before a gameplay loop
+
+- **Decision:** The first implementation target should be a basic interaction proof rather than a representative gameplay loop.
+- **Rationale:** Starting with a real-time, tick-event-driven loop reaches too early into unresolved gameplay and architecture decisions. A smaller proof can validate the project's basic player-input and feedback path with less cost and fewer assumptions.
+- **Consequences:** The current milestone should contain one choice, one immediate visible state change, and a reset path. RTWP, simultaneous ticks, event-driven simulation, regional systems, and durable gameplay architecture are deferred until a smaller interaction works and is easy to change.
+- **Related docs:** `docs/current-state.md`, `docs/milestones.md`, `docs/vision.md`
+
 ## Open
 
-### First playable chunk
+### Basic interaction content
 
-- **Question:** What is the smallest playable chunk that can validate Frontier Company's core strategic promise?
-- **Options:** To be determined.
-- **Needed before:** Implementing production gameplay systems.
+- **Question:** What concrete choice and visible state change should the basic interaction proof use?
+- **Options:** To be chosen for clarity and implementation simplicity; it does not need to represent the final game loop.
+- **Needed before:** Implementing the basic interaction proof.
 
 ### Unity import state
 
@@ -71,7 +78,7 @@ This file records durable project decisions. It should stay lightweight and shou
 ### Gameplay architecture
 
 - **Question:** What architecture should production gameplay systems use?
-- **Options:** To be determined after the first playable chunk is defined.
+- **Options:** To be determined after the basic interaction proof and a later small decision loop reveal what structure is actually needed.
 - **Needed before:** Implementing durable production gameplay systems.
 
 ## Rejected
@@ -85,3 +92,8 @@ This file records durable project decisions. It should stay lightweight and shou
 
 - **Rejected:** Defining detailed gameplay systems, balance values, content taxonomies, or simulation rules before they are needed for a playable chunk.
 - **Reason:** Premature detail could constrain discovery and create false source-of-truth assumptions.
+
+### 2026-10-18 — Tick-driven simulation as the first prototype boundary
+
+- **Rejected:** Requiring the first prototype to establish real-time ticking, a gameplay event system, or representative simulation architecture.
+- **Reason:** Those concerns are deeper than the immediate need to prove that one player action can produce a clear, inspectable result. This rejection concerns prototype order, not the accepted RTWP direction for the game.

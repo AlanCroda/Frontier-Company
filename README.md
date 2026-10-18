@@ -2,7 +2,7 @@
 
 Frontier Company is a compact, systems-driven strategy game being developed in Unity by a solo developer. Its approved time model is Real-Time with Pause (RTWP), operating on a simultaneous tick-based system. The player builds and controls a small organization operating inside a changing regional ecosystem.
 
-This repository is in its initial production-foundation stage. The current priority is establishing lightweight project context for design work and future Codex implementation work without committing to detailed gameplay systems too early.
+This repository has a lightweight production foundation and an otherwise minimal Unity scaffold. The current priority is a basic interaction proof: one player choice, one immediate visible result, and a quick reset. This deliberately comes before a full gameplay loop, RTWP behavior, tick processing, or durable gameplay architecture.
 
 ## Project posture
 
@@ -27,7 +27,7 @@ Frontier Company prioritizes:
 
 ## Development status
 
-The repository contains an early Unity project scaffold. Detailed Unity setup guidance should wait until the project has been imported through Unity Hub and Unity has completed its required project actions.
+The repository contains an early Unity project scaffold with Unity's sample scene and no gameplay scripts. The intended game still uses RTWP with simultaneous ticks, but that time model is not a requirement for the first prototype target. See `docs/milestones.md` for the current scaled-down validation target.
 
 ## How to start
 

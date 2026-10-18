@@ -23,6 +23,7 @@ The player builds and controls a small organization operating inside a changing 
 - Prefer depth from interaction over breadth from content volume.
 - Prefer compact systems that can be observed, tuned, and explained.
 - Prefer playable validation chunks over large speculative design documents.
+- Validate the basic input-state-feedback chain before building a complete gameplay loop or simulation framework.
 - Keep campaign scope bounded.
 - Make consequences readable enough that the player can learn from them.
 - Avoid committing to detailed mechanics before they are needed for a playable chunk.

@@ -2,7 +2,7 @@
 
 Milestones for Frontier Company should be lightweight and organized around playable validation chunks. They are not rigid production phases or calendar commitments.
 
-## Current milestone: Production foundation
+## Completed milestone: Production foundation
 
 ### Goal
 
@@ -34,42 +34,70 @@ Create a small documentation and agent-guidance foundation that supports solo Un
 - Current-state claims match the repository.
 - No detailed undecided gameplay systems are invented.
 
-## Candidate next milestone: First playable chunk definition
+## Current milestone: Basic interaction proof
 
 ### Goal
 
-Define the smallest playable experience that can test whether Frontier Company's core strategic promise is understandable and worth pursuing.
+Create the smallest possible Unity interaction that confirms the project can accept a player choice, change a value, communicate the result, and reset cleanly.
 
 ### Includes
 
-- A concise playable goal.
-- The minimum player decision loop needed for validation.
-- Explicit exclusions to prevent scope creep.
-- A verification checklist for the playable chunk.
+- One scene.
+- One clearly labeled player choice.
+- One small, visible state value.
+- Immediate feedback showing how the choice changed that value.
+- A simple reset or replay path.
+- Temporary implementation where that keeps the proof easy to change.
 
 ### Excludes
 
-- Final balance.
-- Large content sets.
-- Full campaign structure.
-- Long-term architecture beyond what the chunk requires.
+- A complete or representative gameplay loop.
+- Real-time progression, pause controls, ticks, or an event-driven simulation framework.
+- A regional ecosystem, company simulation, economy, campaign, or content taxonomy.
+- Production architecture, final UI, production art, balance, or polish.
 
-## Candidate later milestone: First Unity validation scene
+### Verification
+
+- A player can understand the available choice without explanation.
+- Making the choice causes exactly one readable state change.
+- The result is visible immediately.
+- The interaction can be reset and repeated in seconds.
+- No system is added solely to support anticipated later gameplay.
+
+## Candidate next milestone: Tiny decision loop
 
 ### Goal
 
-Create a minimal Unity scene or prototype space that can validate the first playable chunk.
+Turn the proven interaction into one short before-choice-after cycle that asks a meaningful but deliberately narrow question.
 
 ### Includes
 
-- Only the assets, scripts, and scene structure required for the validation target.
-- Clear notes about what is temporary versus durable.
+- A starting state.
+- A small number of understandable options.
+- One immediate consequence per option.
+- A clear end state and replay path.
 
 ### Excludes
 
-- Production art requirements.
-- Full UI polish.
-- Broad simulation coverage.
+- Continuous time or tick scheduling unless the decision specifically cannot be tested without it.
+- Multiple interacting simulations.
+- Content breadth or long-term progression.
+
+## Candidate later milestone: Time-model validation
+
+### Goal
+
+Test the smallest slice of RTWP and simultaneous tick behavior only after the untimed decision loop is understandable.
+
+### Includes
+
+- Only the timing, pause, and resolution behavior required for one already-proven decision.
+- Clear observation of when state changes occur.
+
+### Excludes
+
+- A general-purpose event framework unless the prototype demonstrates a concrete need for one.
+- Broad simulation, complete scheduling, or final timing values.
 
 ## Candidate later milestone: First systemic interaction prototype
 
